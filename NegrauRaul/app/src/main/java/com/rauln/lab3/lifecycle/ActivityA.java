@@ -17,7 +17,7 @@ public class ActivityA extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_a);
         setTitle("A");
         //Log.d("Step: ", "onCreate A");
         Log.d(TAG, "onCreate A");
@@ -63,12 +63,15 @@ public class ActivityA extends AppCompatActivity {
         switch(view.getId()){
             case R.id.buttonA:{
                 startActivity(new Intent(this, ActivityA.class));
+                break;
             }
             case R.id.buttonB:{
                 startActivity(new Intent(this, ActivityB.class));
+                break;
             }
             case R.id.buttonC:{
                 startActivity(new Intent(this, ActivityC.class));
+                break;
             }
         }
     }
